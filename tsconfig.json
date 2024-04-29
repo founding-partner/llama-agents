@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "Bundler",
-    "moduleDetection": "force",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["src/*"]
-    },
-    "outDir": "build",
+    "target": "esnext",       // Compile down to ESNext
+    "module": "NodeNext",       // Use ECMAScript modules
+    "outDir": "./dist",       // Output directory for all emitted files
+    "strict": true,           // Enable all strict type-checking options
+    "esModuleInterop": true,  // Enables emit interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references
+    "moduleResolution": "NodeNext", // Resolve modules using Node.js style
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "declaration": true, // Generates corresponding '.d.ts' file
+    "sourceMap": true, // Generates corresponding '.map' file
   },
-  "include": ["src", "scripts"]
+  "include": ["src/**/*", "scripts/**/*"], // Files to be included in compilation
+  "exclude": ["node_modules"] // Folders to be excluded from compilation
 }
