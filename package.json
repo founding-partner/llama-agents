@@ -12,12 +12,14 @@
     "dev": "node ./dist/src/index.mjs"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
+    "@types/node": "^16.18.96",
     "drizzle-kit": "^0.19.13",
     "tsx": "^3.14.0",
     "typescript": "^5.4.5"
   },
+  "main": "./dist/index.mjs",
   "dependencies": {
+    "@types/dotenv": "^8.2.0",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.28.6",
     "mysql2": "^3.9.7",
