@@ -8,4 +8,4 @@ const connection = await mysql.createConnection({
   uri: env.DB_URI,
 });
 
-export default drizzle(connection, { mode: "default", schema });
+export const db =  drizzle(connection, { mode: "default", schema });
