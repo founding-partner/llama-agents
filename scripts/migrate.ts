@@ -1,6 +1,6 @@
 import { migrate } from "drizzle-orm/mysql2/migrator";
 import config from "../drizzle.config";
-import db from "~/db";
+import {db} from "../src/db/index";
 
 migrate(db, { migrationsFolder: config.out })
   .then(() => {
