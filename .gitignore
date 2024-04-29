@@ -9,3 +9,4 @@ drizzle
 .env.*
 !.env.sample
 build
+dist
