@@ -8,3 +8,4 @@ drizzle
 .env
 .env.*
 !.env.sample
+build
